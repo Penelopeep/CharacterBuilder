@@ -1,6 +1,6 @@
 # <center> How to add new builds to `builds.json`?
 
-First let's look at the schema for it: \
+First let's look at the schema for it:
 `````json
 "CharacterName":{ //For example: Eula/Diluc/Itto
     // After character name use "{"
