@@ -1,10 +1,10 @@
 {
-  "name": "PluginTemplate",
+  "name": "CharacterBuilder",
   "description": "The Grasscutter example plugin, which uses Maven.",
   "version": "1.0.2-dev",
   "authors": [ "KingRainbow44" ],
   
-  "mainClass": "xyz.grasscutters.pltm.PluginTemplate",
+  "mainClass": "pene.gc.charbuild.CharacterBuilder",
   
   "comments": [
     "This comments block doesn't need to be in your plugin.json.",
