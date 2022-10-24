@@ -31,13 +31,6 @@ import static emu.grasscutter.command.CommandHelpers.*;
                 "<artifactId> [lv<level>] [x<amount>] [<mainPropId>] [<appendPropId>[,<times>]]..."},
         threading = true)
 public final class ModifiedGiveCommand{
-    private enum GiveAllType {
-        NONE,
-        ALL,
-        WEAPONS,
-        MATS,
-        AVATARS
-    }
 
     private static final Map<Pattern, BiConsumer<ModifiedGiveCommand.GiveItemParameters, Integer>> intCommandHandlers = Map.ofEntries(
             Map.entry(lvlRegex, ModifiedGiveCommand.GiveItemParameters::setLvl),
@@ -70,7 +63,7 @@ public final class ModifiedGiveCommand{
             throw new IllegalArgumentException();
         }
         String id = args.remove(0);
-        boolean isRelic = false;
+        boolean isRelic;
 
         try {
             param.id = Integer.parseInt(id);

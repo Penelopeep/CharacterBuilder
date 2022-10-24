@@ -22,7 +22,7 @@ First let's look at the schema for it:
     ] // On last build don't use ","
 }
 `````
-## Now place an example for it
+## Example build:
 
 `````json
 "Zhongli": {
