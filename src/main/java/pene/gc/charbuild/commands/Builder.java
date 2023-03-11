@@ -23,7 +23,7 @@ import java.util.List;
  * Other optional fields can be found in the {@link Command} annotation interface.
  */
 
-@Command(label = "build", usage = "build <build name")
+@Command(label = "build", usage = "<build name>")
 public final class Builder implements CommandHandler {
 
     @Override public void execute(Player sender, Player targetPlayer, List<String> args) {
@@ -46,6 +46,14 @@ public final class Builder implements CommandHandler {
         } else {
             String buildName = args.get(0);
             List<GameItem> doneArtifacts = Datareader.artifacts(targetPlayer, avatarName, buildName);
+            if (doneArtifacts==null){
+                if (sender==null){
+                    Grasscutter.getLogger().info(String.format("Build %s not found for %s", buildName, avatarName));
+                } else {
+                    CommandHandler.sendMessage(targetPlayer,String.format("Build %s not found for %s", buildName, avatarName));
+                }
+                return;
+            }
             for (GameItem artifact : doneArtifacts) {
                 currentAvatar.equipItem(artifact, true);
             }

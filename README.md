@@ -22,4 +22,5 @@ I'm open for extending current build list, so if you have any good builds that y
 3. How to make builds: 
     - Look into [editing builds.json](Artifacts.md)
 ### Version
-The plugin template is currently on Grasscutter version `1.3.2-dev`.
+The plugin currently for Grasscutter version `1.3.2-dev` (updated to 1.4.6).
+Credits: ZeroHazel#2017 for some builds <3
