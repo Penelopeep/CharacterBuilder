@@ -1,6 +1,6 @@
 # <center> Character Builder Plugin
- <center> Plugin that nobody asked for but many of us needed.  <br />
-Allows for quickly equipping character with one of saved builds.</center>
+ <div style="text-align: center;"> Plugin that nobody asked for but many of us needed.  <br />
+Allows for quickly equipping character with one of saved builds.</div>
 
 ## Usage
 
@@ -22,6 +22,5 @@ I'm open for extending current build list, so if you have any good builds that y
 3. How to make builds: 
     - Look into [editing builds.json](Artifacts.md)
 ### Version
-The plugin currently for Grasscutter version `1.3.2-dev` (updated to 1.4.6).
+The plugin currently for Grasscutter version `1.3.2` (updated to 1.4.6).
 Credits: ZeroHazel#2017 for some builds <3
-:D
