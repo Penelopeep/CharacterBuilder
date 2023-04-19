@@ -24,3 +24,4 @@ I'm open for extending current build list, so if you have any good builds that y
 ### Version
 The plugin currently for Grasscutter version `1.3.2-dev` (updated to 1.4.6).
 Credits: ZeroHazel#2017 for some builds <3
+:D
