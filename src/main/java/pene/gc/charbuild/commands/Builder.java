@@ -15,7 +15,7 @@ import java.util.List;
  * 1. The {@link Command} annotation.
  * 2. Implementing the {@link CommandHandler} interface.
  * 3. Implementing the {@link CommandHandler#execute(Player, Player, List)} method.
- * 
+ *
  * The {@link Command} annotation should contain:
  * 1. A command label. ('example' in this case makes '/example' runnable in-game or on the console)
  * 2. A description of the command. (this is shown in the `/help` command description)
@@ -30,7 +30,7 @@ public final class Builder implements CommandHandler {
         Avatar currentAvatar = targetPlayer.getTeamManager().getCurrentAvatarEntity().getAvatar();
         String avatarName = currentAvatar.getAvatarData().getName();
         Grasscutter.getLogger().info(String.format("AvatarName: %s", avatarName));
-        if (args.size()<1){
+        if (args.isEmpty()){
             String buildList = Datareader.builds(avatarName);
             if (sender==null){
                 Grasscutter.getLogger().info(String.format("Available builds for %s: %s",avatarName, buildList));
