@@ -1,25 +1,25 @@
 # <center> How to add new builds to `builds.json`?
 
 First let's look at the schema for it:
-`````json
-"CharacterName":{ //For example: Eula/Diluc/Itto
-    // After character name use "{"
-    // and on the end there's "}"
-    "BuildName1":[ // After build name there's "['
-        "ArtifactCode1", //Place for artifact codes
+`````python
+"CharacterName":{ #For example: Eula/Diluc/Itto
+    # After character name use "{"
+    # and on the end there's "}"
+    "BuildName1":[ # After build name there's "['
+        "ArtifactCode1", #Place for artifact codes
         "ArtifactCode2", 
-        "ArtifactCode3", //If there's next artifact
-        "ArtifactCode4", //place "," at the end
-        "ArtifactCode5" //Don't use "," here
-    ], // Close each build with "]"
-    // If there's more than one build also use ","
-    "BuildName2":[ //Name it however you want
-        "ArtifactCode1", //Place for artifact codes
+        "ArtifactCode3", #If there's next artifact
+        "ArtifactCode4", #place "," at the end
+        "ArtifactCode5" #Don't use "," here
+    ], # Close each build with "]"
+    # If there's more than one build also use ","
+    "BuildName2":[ #Name it however you want
+        "ArtifactCode1", #Place for artifact codes
         "ArtifactCode2",
         "ArtifactCode3",
         "ArtifactCode4",
-        "ArtifactCode5" //Don't use "," here
-    ] // On last build don't use ","
+        "ArtifactCode5" #Don't use "," here
+    ] # On last build don't use ","
 }
 `````
 ## Example build:
